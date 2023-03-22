@@ -1,0 +1,12 @@
+<div class="product m-3">
+<div routerLink="/product-details/{{ data.id }}">
+  <div class="image">
+    <img [src]="imagePath+data?.poster_path" alt="">
+  </div>
+  <div class="body px-3">
+    <h4 class="pt-2">{{ data.original_title | slice : 0 : 20 }}</h4>
+    <p>{{ data.overview | slice : 0 : 25}} ...</p>
+
+  </div>
+</div>
+</div>
